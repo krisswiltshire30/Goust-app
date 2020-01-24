@@ -25,7 +25,7 @@ An iOS application that pulls product data from the Gousto products API and popu
 
 #### Final Design
 
-![alt text](final_app_Design.png)
+![alt text](final_app_design.png)
 
 ---
 

@@ -7,7 +7,30 @@
 		<key>Gousto_app2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+		<key>Gousto_app2UITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>20838C6523D48B490087F9F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20838C7923D48B4B0087F9F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20838C8423D48B4B0087F9F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,13 @@
 		20838C6F23D48B490087F9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20838C6D23D48B490087F9F6 /* Main.storyboard */; };
 		20838C7123D48B4A0087F9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20838C7023D48B4A0087F9F6 /* Assets.xcassets */; };
 		20838C7423D48B4A0087F9F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20838C7223D48B4A0087F9F6 /* LaunchScreen.storyboard */; };
-		20838C7F23D48B4B0087F9F6 /* Gousto_app2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20838C7E23D48B4B0087F9F6 /* Gousto_app2Tests.swift */; };
 		20838C8A23D48B4B0087F9F6 /* Gousto_app2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20838C8923D48B4B0087F9F6 /* Gousto_app2UITests.swift */; };
+		20838C9A23D497EE0087F9F6 /* ProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20838C9923D497EE0087F9F6 /* ProductDataModel.swift */; };
+		20838C9C23D4A62A0087F9F6 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20838C9B23D4A62A0087F9F6 /* ProductTableViewCell.swift */; };
+		20838CA023D53AD00087F9F6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20838C9F23D53AD00087F9F6 /* DetailsViewController.swift */; };
+		20838CA223D61F1C0087F9F6 /* ProductSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20838CA123D61F1C0087F9F6 /* ProductSearch.swift */; };
+		20838CA423D718A00087F9F6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 20838CA323D718A00087F9F6 /* Podfile */; };
+		312D1C0C34C96FDA464E91F7 /* Pods_Gousto_app2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4709C1D74C8A88B1F552DB /* Pods_Gousto_app2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +47,17 @@
 		20838C7323D48B4A0087F9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20838C7523D48B4A0087F9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20838C7A23D48B4B0087F9F6 /* Gousto_app2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gousto_app2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		20838C7E23D48B4B0087F9F6 /* Gousto_app2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gousto_app2Tests.swift; sourceTree = "<group>"; };
-		20838C8023D48B4B0087F9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20838C8523D48B4B0087F9F6 /* Gousto_app2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gousto_app2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20838C8923D48B4B0087F9F6 /* Gousto_app2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gousto_app2UITests.swift; sourceTree = "<group>"; };
 		20838C8B23D48B4B0087F9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20838C9923D497EE0087F9F6 /* ProductDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataModel.swift; sourceTree = "<group>"; };
+		20838C9B23D4A62A0087F9F6 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		20838C9F23D53AD00087F9F6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = ../DetailsViewController.swift; sourceTree = "<group>"; };
+		20838CA123D61F1C0087F9F6 /* ProductSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductSearch.swift; path = ../ProductSearch.swift; sourceTree = "<group>"; };
+		20838CA323D718A00087F9F6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		321113A875E67A3B302EC146 /* Pods-Gousto_app2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gousto_app2.release.xcconfig"; path = "Target Support Files/Pods-Gousto_app2/Pods-Gousto_app2.release.xcconfig"; sourceTree = "<group>"; };
+		337A61657F87267CF0616FF7 /* Pods-Gousto_app2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gousto_app2.debug.xcconfig"; path = "Target Support Files/Pods-Gousto_app2/Pods-Gousto_app2.debug.xcconfig"; sourceTree = "<group>"; };
+		6A4709C1D74C8A88B1F552DB /* Pods_Gousto_app2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gousto_app2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				312D1C0C34C96FDA464E91F7 /* Pods_Gousto_app2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +89,12 @@
 		20838C5D23D48B490087F9F6 = {
 			isa = PBXGroup;
 			children = (
+				20838CA323D718A00087F9F6 /* Podfile */,
 				20838C6823D48B490087F9F6 /* Gousto_app2 */,
-				20838C7D23D48B4B0087F9F6 /* Gousto_app2Tests */,
 				20838C8823D48B4B0087F9F6 /* Gousto_app2UITests */,
 				20838C6723D48B490087F9F6 /* Products */,
+				E86B33D1BD1CA51069216AA1 /* Pods */,
+				EDAF9B56BA5D4AC3717B3472 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,23 +111,18 @@
 		20838C6823D48B490087F9F6 /* Gousto_app2 */ = {
 			isa = PBXGroup;
 			children = (
-				20838C6923D48B490087F9F6 /* AppDelegate.swift */,
+				20838CA123D61F1C0087F9F6 /* ProductSearch.swift */,
+				20838C9F23D53AD00087F9F6 /* DetailsViewController.swift */,
 				20838C6B23D48B490087F9F6 /* ViewController.swift */,
+				20838C6923D48B490087F9F6 /* AppDelegate.swift */,
 				20838C6D23D48B490087F9F6 /* Main.storyboard */,
+				20838C9B23D4A62A0087F9F6 /* ProductTableViewCell.swift */,
 				20838C7023D48B4A0087F9F6 /* Assets.xcassets */,
 				20838C7223D48B4A0087F9F6 /* LaunchScreen.storyboard */,
 				20838C7523D48B4A0087F9F6 /* Info.plist */,
+				20838C9923D497EE0087F9F6 /* ProductDataModel.swift */,
 			);
 			path = Gousto_app2;
-			sourceTree = "<group>";
-		};
-		20838C7D23D48B4B0087F9F6 /* Gousto_app2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				20838C7E23D48B4B0087F9F6 /* Gousto_app2Tests.swift */,
-				20838C8023D48B4B0087F9F6 /* Info.plist */,
-			);
-			path = Gousto_app2Tests;
 			sourceTree = "<group>";
 		};
 		20838C8823D48B4B0087F9F6 /* Gousto_app2UITests */ = {
@@ -125,6 +134,23 @@
 			path = Gousto_app2UITests;
 			sourceTree = "<group>";
 		};
+		E86B33D1BD1CA51069216AA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				337A61657F87267CF0616FF7 /* Pods-Gousto_app2.debug.xcconfig */,
+				321113A875E67A3B302EC146 /* Pods-Gousto_app2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDAF9B56BA5D4AC3717B3472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A4709C1D74C8A88B1F552DB /* Pods_Gousto_app2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20838C8E23D48B4B0087F9F6 /* Build configuration list for PBXNativeTarget "Gousto_app2" */;
 			buildPhases = (
+				2E31B6EA55FE820D623CC248 /* [CP] Check Pods Manifest.lock */,
 				20838C6223D48B490087F9F6 /* Sources */,
 				20838C6323D48B490087F9F6 /* Frameworks */,
 				20838C6423D48B490087F9F6 /* Resources */,
+				1670E725681B3B41A12840D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +259,7 @@
 			files = (
 				20838C7423D48B4A0087F9F6 /* LaunchScreen.storyboard in Resources */,
 				20838C7123D48B4A0087F9F6 /* Assets.xcassets in Resources */,
+				20838CA423D718A00087F9F6 /* Podfile in Resources */,
 				20838C6F23D48B490087F9F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +280,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1670E725681B3B41A12840D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gousto_app2/Pods-Gousto_app2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gousto_app2/Pods-Gousto_app2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gousto_app2/Pods-Gousto_app2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E31B6EA55FE820D623CC248 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gousto_app2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20838C6223D48B490087F9F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				20838C6C23D48B490087F9F6 /* ViewController.swift in Sources */,
+				20838CA223D61F1C0087F9F6 /* ProductSearch.swift in Sources */,
+				20838C9A23D497EE0087F9F6 /* ProductDataModel.swift in Sources */,
+				20838C9C23D4A62A0087F9F6 /* ProductTableViewCell.swift in Sources */,
 				20838C6A23D48B490087F9F6 /* AppDelegate.swift in Sources */,
+				20838CA023D53AD00087F9F6 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +340,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20838C7F23D48B4B0087F9F6 /* Gousto_app2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +504,7 @@
 		};
 		20838C8F23D48B4B0087F9F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 337A61657F87267CF0616FF7 /* Pods-Gousto_app2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +522,7 @@
 		};
 		20838C9023D48B4B0087F9F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 321113A875E67A3B302EC146 /* Pods-Gousto_app2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

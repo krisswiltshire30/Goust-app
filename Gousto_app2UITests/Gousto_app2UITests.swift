@@ -11,24 +11,63 @@ import XCTest
 class Gousto_app2UITests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+        func test_DirectsToDetailsPageOnTap() {
+            let app = XCUIApplication()
+            let title = app.tables.cells["Borsao Macabeo, £6.95"].children(matching: .image).element
+            let titleElement = app.staticTexts["detailTitle"]
+            let descriptionElement = app.staticTexts["detailDescription"]
+            let sizeElement = app.staticTexts["detailSize"]
+            let priceElement = app.staticTexts["detailPrice"]
+            let allergyElement = app.staticTexts["detailAllergy"]
+            title.tap()
+            XCTAssertTrue(titleElement.exists)
+            XCTAssertTrue(descriptionElement.exists)
+            XCTAssertTrue(sizeElement.exists)
+            XCTAssertTrue(priceElement.exists)
+            XCTAssertTrue(allergyElement.exists)
     }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test_RecievesTheCorrectSearchResults() {
+        let app = XCUIApplication()
+        let tableCell = app.tables.cells
+        let searchBar = app.otherElements.containing(.image, identifier:"Gousto_logo").children(matching: .other).element.children(matching: .searchField)
+        searchBar.element.tap()
+        searchBar.element.typeText("Food")
+        app/*@START_MENU_TOKEN@*/.keyboards.buttons["Search"]/*[[".keyboards.buttons[\"Search\"]",".buttons[\"Search\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        sleep(2)
+        XCTAssertTrue(tableCell.count == 1)
+        XCTAssertTrue(tableCell["OLD SKU Superfood Bakery Spirit Lifter Cookies, £6.55"].exists)
     }
-
+    
+    func test_ReturnsToAllProducts() {
+        let app = XCUIApplication()
+        let totalProducts = 458
+        let tableCell = app.tables.cells
+        let searchBar = app.otherElements.containing(.image, identifier:"Gousto_logo").children(matching: .other).element.children(matching: .searchField)
+        searchBar.element.tap()
+        searchBar.element.typeText("Food")
+        app/*@START_MENU_TOKEN@*/.keyboards.buttons["Search"]/*[[".keyboards.buttons[\"Search\"]",".buttons[\"Search\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        sleep(1)
+        searchBar.element.tap()
+        app.searchFields.buttons["Clear text"].tap()
+        sleep(1)
+        XCTAssertTrue(tableCell.count == totalProducts)
+        XCTAssertTrue(tableCell["Borsao Macabeo, £6.95"].exists)
+        
+    }
+    
+    func test_BackButtonReturnsToMainView() {
+        let app = XCUIApplication()
+        let descriptionElement = app.staticTexts["detailDescription"]
+        XCTAssertTrue(descriptionElement.exists == false)
+        app.tables.cells["Borsao Macabeo, £6.95"].images["placeholder"].tap()
+        XCTAssertTrue(descriptionElement.exists)
+        app.buttons["Back"].tap()
+        XCTAssertTrue(descriptionElement.exists == false)
+        XCTAssertTrue(app.tables.cells["Borsao Macabeo, £6.95"].exists)
+    }
 }

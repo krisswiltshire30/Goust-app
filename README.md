@@ -38,7 +38,3 @@ I am happy with the UX and overall how the app turned out but I did run into a f
 The other issue I ran into was encoding and saving the JSON data to the app to keep the products persistent. I was able to encode the data, but saving it locally proved problematic. I tried a quite a few model variations without any luck.
 
 If I was to start again I would use Alamofire and Swiftyjson to handle the json requests and save the data persistently. I did a attempt to use them near the end of development but decided against it due to lack of time.
-
-If the decision is made to not move forward with my application I would like to thank you for your time and would very much like the opportunity to talk through what I could have done better to meet all the requirements, If not just to find out what I was doing wrong in regards to retriving the images!
-
-Thanks again for your time, and I look forward to hearing from you.
